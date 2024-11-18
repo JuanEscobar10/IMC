@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesión o Registro</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bienvenido a la calculadora de IMC</h1>
+            <P>Descubre tu estado físico con nuestro sistema de cálculo del Índice de Masa Corporal (IMC).</P>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <div class="toggle-buttons">
+                    <button id="btn-login">Inicar Sesión</button>
+                    <button id="btn-register">Registrarse</button>
+                </div>
+
+                <form  id="form-login" class="form hidden">
+                    <h2>Iniciar Sesión</h2>
+                    <label for="login-user">usuario</label>
+                    <input type="text" id="login-user" name="login-user" required>
+                    <label for="login-pass">Contraseña</label>
+                    <input type="password" id="login-pass" name="login-pass" required>
+                    <button type="submit">Entrar</button>
+                </form>
+
+                <form id="form-register" class="form hidden">
+                    <h2>Registrarse</h2>
+                    <label for="register-name">Nombre</label>
+                    <input type="text" id="register-name" name="register-name" required>
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" name="register-email" required>
+                    <label for="register-phone">Telefono</label>
+                    <input type="tel" id="register-phone" name="register-phone" required>
+                    <label for="register-pass">Contraseña</label>
+                    <input type="password" id="register-pass" name="register-pass" required>
+                     <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="/controller/usuarioController.js"></script>
+</body>
+</html>
